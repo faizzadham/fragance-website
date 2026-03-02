@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 header {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -8,7 +10,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .nav-links {
@@ -32,10 +33,11 @@ nav {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Inter', sans-serif;
     color: white;
+    font-size: 1rem;
+    line-height: 1.7;
 }
-
 
 .bg-video {
     position: fixed;
@@ -54,38 +56,60 @@ body {
 }
 
 .content-container {
-        position:relative;
-        z-index:1;
-        display:flex;
-        align-items:center;
-        padding:50px;
-        gap:50px;
-      }
-      
-      .content-left {
-        flex:1;
-        text-align:center;
-      }
-      
-      .content-right {
-        flex:1;
-        text-align:left;
-        font-size: 25px;
-      }
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+.content-left {
+    flex: 1;
+    text-align: center;
+}
+
+.content-right {
+    flex: 1;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
 
 .testimonials {
-    background: #111;
+    background: rgba(0, 0, 0, 0.75);
     color: white;
     padding: 60px 20px;
     text-align: center;
 }
 
+.testimonials h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
 .testimonial-card {
-    background: #1c1c1c;
+    background: rgba(28, 28, 28, 0.85);
     margin: 20px auto;
-    padding: 20px;
+    padding: 24px 28px;
     max-width: 600px;
-    border-left: 4px solid #e2b96a;
+    border-left: 4px solid #124b85;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.testimonial-card p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #f0f0f0;
+    margin: 0 0 8px 0;
+}
+
+.testimonial-card span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #9ec4ff;
 }
 
 .social {
@@ -101,21 +125,36 @@ body {
     width: 200px;
     border-radius: 10px;
 }
+
+.social-video {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
 .about {
     background-color: rgb(0, 0, 0);
-
     color: rgb(255, 255, 255);
     padding: 40px;
     text-align: center;
+    font-size: 1.05rem;
+    line-height: 1.7;
 }
+
 .contact {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     padding: 40px;
     text-align: left;
+    font-size: 1.05rem;
+    line-height: 1.7;
 }
+
 .footer {
-   
     color: white;
     text-align: center;
+    font-size: 0.95rem;
 }

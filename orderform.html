@@ -15,126 +15,91 @@
         <ul class="nav-links">
           <li><a href="main.html">Home</a></li>
           <li><a href="main.html#products">Our Products</a></li>
-          <li><a href="main.html#about">About us</a></li>
-          <li><a href="main.html#contact">Contact</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li><a href="orderform.html">Order</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-        <video autoplay muted loop playsinline class="bg-video">
-          <source src="video/white-black.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
       <div class="order-container">
         <h1>Order Form</h1>
         <div class="promo-banner">Order 2 get 1 free!</div>
+
         <form>
           <div class="form-group">
-            <label for="name">Full Name </label>
-            <input type="text" id="name" name="name"/>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" />
           </div>
 
           <div class="form-group">
-            <label for="email">Email </label>
-            <input type="email" id="email" name="email"/>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
           </div>
 
           <div class="form-group">
-            <label for="phone"
-              >Phone Number</label
-            >
-            <input type="tel" id="phone" name="phone"/>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" />
           </div>
 
           <div class="form-group">
             <label for="address">Address</label>
-            <input type="text" id="address" name="address"/>
+            <input type="text" id="address" name="address" />
           </div>
 
-          
           <div class="products-section">
             <h3>Men's Fragrances</h3>
 
             <div class="product-option">
-              <input
-                type="checkbox"
-                id="ice"
-                name="products"
-                value="Hawas Ice"
-              />
+              <input type="checkbox" id="ice" name="products" value="Hawas Ice" />
               <label for="ice">Hawas Ice</label>
-              <input
-                type="number"
-                name="quantity-ice"
-                min="1"
-                value="1"
-                class="product-quantity"
-              />
+              <input type="number" name="quantity-ice" min="1" value="1" class="product-quantity" />
             </div>
 
             <div class="product-option">
-              <input
-                type="checkbox"
-                id="fire"
-                name="products"
-                value="Hawas Fire"
-              />
+              <input type="checkbox" id="fire" name="products" value="Hawas Fire" />
               <label for="fire">Hawas Fire</label>
-              <input
-                type="number"
-                name="quantity-fire"
-                min="1"
-                value="1"
-                class="product-quantity"
-              />
+              <input type="number" name="quantity-fire" min="1" value="1" class="product-quantity" />
             </div>
 
             <div class="product-option">
-              <input
-                type="checkbox"
-                id="elixir"
-                name="products"
-                value="Hawas Elixir"
-              />
+              <input type="checkbox" id="elixir" name="products" value="Hawas Elixir" />
               <label for="elixir">Hawas Elixir</label>
-              <input
-                type="number"
-                name="quantity-elixir"
-                min="1"
-                value="1"
-                class="product-quantity"
-              />
+              <input type="number" name="quantity-elixir" min="1" value="1" class="product-quantity" />
             </div>
 
-            <h3 style="margin-top: 20px">Women's Fragrances</h3>
+            <h3 style="margin-top: 20px;">Women's Fragrances</h3>
 
             <div class="product-option">
-              <input
-                type="checkbox"
-                id="diva"
-                name="products"
-                value="Hawas Diva"
-              />
+              <input type="checkbox" id="diva" name="products" value="Hawas Diva" />
               <label for="diva">Hawas Diva</label>
-              <input
-                type="number"
-                name="quantity-diva"
-                min="1"
-                value="1"
-                class="product-quantity"
-              />
+              <input type="number" name="quantity-diva" min="1" value="1" class="product-quantity" />
+            </div>
+          </div>
+
+          <!-- PAYMENT METHOD -->
+          <div class="payment-section">
+            <h3>Payment Method</h3>
+            <div class="payment-options">
+              <label class="payment-option">
+                <input type="radio" name="payment" value="card" checked />
+                💳 Card
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="payment" value="cash" />
+                💵 Cash
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="payment" value="qr" />
+                📱 QR Pay
+              </label>
             </div>
           </div>
 
           <div class="form-group">
             <label for="notes">Special Notes</label>
-            <textarea
-              id="notes"
-              name="notes"
-              placeholder="Any special requests or notes..."
-            ></textarea>
+            <textarea id="notes" name="notes" placeholder="Any special requests or notes..."></textarea>
           </div>
 
           <button type="submit" class="submit-btn">Submit Order</button>
@@ -142,7 +107,7 @@
       </div>
     </main>
 
-    <footer class="footer">
+    <footer>
       <p>&copy; 2026 Essence Vault</p>
     </footer>
   </body>
